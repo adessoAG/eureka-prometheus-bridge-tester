@@ -5,13 +5,13 @@ services:
     image: eureka-service
     ports:
       - 8761:8761
-  hystrix-service:
-    build: hystrix-service
-    image: hystrix-service
-    ports:
-      - 8282:8282
   test-service:
     build: test-service
     image: test-service
     ports:
-      - 1234:1234
+      - 1001:1001
+  test-service:
+    build: test-service
+    image: test-service
+    ports:
+      - 1002:1002
