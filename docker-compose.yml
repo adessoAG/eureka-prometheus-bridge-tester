@@ -10,8 +10,8 @@ services:
     image: test-service
     ports:
       - 1001:1001
-  test-service:
-    build: test-service
-    image: test-service
+  test-service2:
+    build: test-service2
+    image: test-service2
     ports:
       - 1002:1002
