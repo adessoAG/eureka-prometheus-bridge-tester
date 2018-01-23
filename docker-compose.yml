@@ -8,10 +8,14 @@ services:
   test-service:
     build: test-service
     image: test-service
+    links:
+      - eureka-service
     ports:
       - 1001:1001
   test-service2:
     build: test-service2
     image: test-service2
+    links:
+      - eureka-service
     ports:
       - 1002:1002
