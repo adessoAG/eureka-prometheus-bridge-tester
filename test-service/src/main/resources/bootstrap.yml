@@ -1,6 +1,9 @@
 spring:
   application:
     name: test-service
+  cloud:
+    config:
+      enabled: false
 server:
   port: 1234
 eureka:
