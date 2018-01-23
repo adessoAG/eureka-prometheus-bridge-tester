@@ -2,12 +2,14 @@ package de.adesso.testservice2
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 import java.time.LocalDateTime
 import java.util.concurrent.atomic.AtomicLong
 
 @SpringBootApplication
+@EnableDiscoveryClient
 class TestServiceApplication
 
 fun main(args: Array<String>) {
