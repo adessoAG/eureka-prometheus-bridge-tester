@@ -3,16 +3,3 @@ server:
 spring:
   application:
     name: eureka-service
-  cloud:
-    config:
-      enabled: false
-      discovery:
-        enabled: false
-eureka:
-  instance:
-    hostname: discovery
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
-    serviceUrl:
-      defaultZone: http://discovery:${server.port}/eureka/
