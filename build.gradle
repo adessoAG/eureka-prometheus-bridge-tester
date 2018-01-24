@@ -35,11 +35,5 @@ subprojects {
     dependencies {
         compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
     }
-    task dockerBuild << {
-        exec {
-            commandLine 'docker', 'build', '--force-rm=true', "--tag='${project.name}'", '.'
-        }
-    }
-
 }
 
