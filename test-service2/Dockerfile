@@ -1,4 +1,4 @@
 FROM java:8-jre-alpine
 ADD ./build/libs/test-service2-0.0.1-SNAPSHOT.jar app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
-EXPOSE 8080 1002
+EXPOSE 1002
