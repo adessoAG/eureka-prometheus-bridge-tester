@@ -12,11 +12,11 @@ The services can also be used and run for testing via docker registry.
 
 Use:
 
-'docker run -d --name eureka-service -p 8761:8761 smahler/epb-eureka-service'
+`docker run -d --name eureka-service -p 8761:8761 smahler/epb-eureka-service`
 
-'docker run -d --name test-service -p 1001:1001 --link=eureka-service smahler/epb-test-service'
+`docker run -d --name test-service -p 1001:1001 --link=eureka-service smahler/epb-test-service`
 
-'docker run -d --name test-service2 -p 1002:1002 --link=eureka-service smahler/epb-test-service2'
+`docker run -d --name test-service2 -p 1002:1002 --link=eureka-service smahler/epb-test-service2`
 
 
 ### Run the standard way
