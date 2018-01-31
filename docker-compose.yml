@@ -3,11 +3,15 @@ services:
   eureka-service:
     build: eureka-service
     image: eureka-service
+    environment:
+      - "SPRING_PROFILES_ACTIVE=docker"
     ports:
       - 8761:8761
   test-service:
     build: test-service
     image: test-service
+    environment:
+      - "SPRING_PROFILES_ACTIVE=docker"
     links:
       - eureka-service
     ports:
@@ -15,6 +19,8 @@ services:
   test-service2:
     build: test-service2
     image: test-service2
+    environment:
+      - "SPRING_PROFILES_ACTIVE=docker"
     links:
       - eureka-service
     ports:
