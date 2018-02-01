@@ -10,7 +10,9 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-
+endpoints:
+  prometheus:
+    enabled: true
 ---
 
 spring:
@@ -19,3 +21,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://eureka-service:8761/eureka/
+endpoints:
+  prometheus:
+    enabled: true

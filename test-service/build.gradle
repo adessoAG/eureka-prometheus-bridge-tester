@@ -44,6 +44,8 @@ ext {
 }
 
 dependencies {
+	compile('org.springframework.boot:spring-boot-starter-actuator')
+	runtime("io.micrometer:micrometer-registry-prometheus")
 	compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
 	compile('org.springframework.cloud:spring-cloud-starter-netflix-zuul')
 	compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}")
